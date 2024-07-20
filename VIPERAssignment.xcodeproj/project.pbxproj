@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500227722C48DC6E006E6CF9 /* UniversityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500227712C48DC6E006E6CF9 /* UniversityDetailView.swift */; };
+		500227742C48DC88006E6CF9 /* UniversityDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500227732C48DC88006E6CF9 /* UniversityDetailInteractor.swift */; };
+		500227762C48DC90006E6CF9 /* UniversityDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500227752C48DC90006E6CF9 /* UniversityDetailPresenter.swift */; };
+		500227782C48DC9D006E6CF9 /* UniversityDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500227772C48DC9D006E6CF9 /* UniversityDetailEntity.swift */; };
+		5002277A2C48DCA6006E6CF9 /* UniversityDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500227792C48DCA6006E6CF9 /* UniversityDetailRouter.swift */; };
+		503B3A612C45174F00F42348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3A602C45174F00F42348 /* AppDelegate.swift */; };
+		503B3A6B2C45174F00F42348 /* VIPERAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 503B3A692C45174F00F42348 /* VIPERAssignment.xcdatamodeld */; };
+		503B3A6D2C45175000F42348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503B3A6C2C45175000F42348 /* Assets.xcassets */; };
+		503B3A702C45175000F42348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503B3A6E2C45175000F42348 /* LaunchScreen.storyboard */; };
+		503B3A7B2C45175000F42348 /* VIPERAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3A7A2C45175000F42348 /* VIPERAssignmentTests.swift */; };
+		503B3A852C45175000F42348 /* VIPERAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3A842C45175000F42348 /* VIPERAssignmentUITests.swift */; };
+		503B3A872C45175000F42348 /* VIPERAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3A862C45175000F42348 /* VIPERAssignmentUITestsLaunchTests.swift */; };
+		50617D402C4708F700C0A36F /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D3F2C4708F700C0A36F /* PersistentStorage.swift */; };
+		50617D422C470B0E00C0A36F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D412C470B0E00C0A36F /* NetworkService.swift */; };
+		50617D442C470B2000C0A36F /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D432C470B2000C0A36F /* NetworkServiceImpl.swift */; };
+		50617D462C470B3700C0A36F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D452C470B3700C0A36F /* Endpoint.swift */; };
+		50617D482C470B4800C0A36F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D472C470B4800C0A36F /* NetworkError.swift */; };
+		50617D4A2C470B6300C0A36F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D492C470B6300C0A36F /* Path.swift */; };
+		50617D4C2C470B7C00C0A36F /* EndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D4B2C470B7C00C0A36F /* EndpointBuilder.swift */; };
+		50617D4F2C470DDF00C0A36F /* UniversityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D4E2C470DDF00C0A36F /* UniversityRepository.swift */; };
+		50617D512C470F0C00C0A36F /* RemoteUniversityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D502C470F0C00C0A36F /* RemoteUniversityDataSource.swift */; };
+		50617D532C470F1F00C0A36F /* LocalUniversityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D522C470F1F00C0A36F /* LocalUniversityDataSource.swift */; };
+		50617D552C470F4300C0A36F /* UniversityRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50617D542C470F4300C0A36F /* UniversityRepositoryImpl.swift */; };
+		50C5AF582C482B4100FEB94B /* CDUniversity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AF562C482B4100FEB94B /* CDUniversity+CoreDataClass.swift */; };
+		50C5AF592C482B4100FEB94B /* CDUniversity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AF572C482B4100FEB94B /* CDUniversity+CoreDataProperties.swift */; };
+		50F72AE52C46392A00D7D5F2 /* UniversityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F72AE42C46392A00D7D5F2 /* UniversityListView.swift */; };
+		50F72AE72C46393E00D7D5F2 /* UniversityListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F72AE62C46393E00D7D5F2 /* UniversityListInteractor.swift */; };
+		50F72AE92C46395700D7D5F2 /* UniversityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F72AE82C46395700D7D5F2 /* UniversityListPresenter.swift */; };
+		50F72AEB2C46396300D7D5F2 /* UniversityListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F72AEA2C46396300D7D5F2 /* UniversityListEntity.swift */; };
+		50F72AED2C46396F00D7D5F2 /* UniversityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F72AEC2C46396F00D7D5F2 /* UniversityList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		503B3A772C45175000F42348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 503B3A552C45174F00F42348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 503B3A5C2C45174F00F42348;
+			remoteInfo = VIPERAssignment;
+		};
+		503B3A812C45175000F42348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 503B3A552C45174F00F42348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 503B3A5C2C45174F00F42348;
+			remoteInfo = VIPERAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		500227712C48DC6E006E6CF9 /* UniversityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailView.swift; sourceTree = "<group>"; };
+		500227732C48DC88006E6CF9 /* UniversityDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailInteractor.swift; sourceTree = "<group>"; };
+		500227752C48DC90006E6CF9 /* UniversityDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailPresenter.swift; sourceTree = "<group>"; };
+		500227772C48DC9D006E6CF9 /* UniversityDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailEntity.swift; sourceTree = "<group>"; };
+		500227792C48DCA6006E6CF9 /* UniversityDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailRouter.swift; sourceTree = "<group>"; };
+		503B3A5D2C45174F00F42348 /* VIPERAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503B3A602C45174F00F42348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		503B3A6A2C45174F00F42348 /* VIPERAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIPERAssignment.xcdatamodel; sourceTree = "<group>"; };
+		503B3A6C2C45175000F42348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		503B3A6F2C45175000F42348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		503B3A712C45175000F42348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503B3A762C45175000F42348 /* VIPERAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		503B3A7A2C45175000F42348 /* VIPERAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERAssignmentTests.swift; sourceTree = "<group>"; };
+		503B3A802C45175000F42348 /* VIPERAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		503B3A842C45175000F42348 /* VIPERAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERAssignmentUITests.swift; sourceTree = "<group>"; };
+		503B3A862C45175000F42348 /* VIPERAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50617D3F2C4708F700C0A36F /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		50617D412C470B0E00C0A36F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		50617D432C470B2000C0A36F /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
+		50617D452C470B3700C0A36F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		50617D472C470B4800C0A36F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		50617D492C470B6300C0A36F /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		50617D4B2C470B7C00C0A36F /* EndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBuilder.swift; sourceTree = "<group>"; };
+		50617D4E2C470DDF00C0A36F /* UniversityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityRepository.swift; sourceTree = "<group>"; };
+		50617D502C470F0C00C0A36F /* RemoteUniversityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUniversityDataSource.swift; sourceTree = "<group>"; };
+		50617D522C470F1F00C0A36F /* LocalUniversityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUniversityDataSource.swift; sourceTree = "<group>"; };
+		50617D542C470F4300C0A36F /* UniversityRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityRepositoryImpl.swift; sourceTree = "<group>"; };
+		50C5AF562C482B4100FEB94B /* CDUniversity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUniversity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50C5AF572C482B4100FEB94B /* CDUniversity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUniversity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50F72AE42C46392A00D7D5F2 /* UniversityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListView.swift; sourceTree = "<group>"; };
+		50F72AE62C46393E00D7D5F2 /* UniversityListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListInteractor.swift; sourceTree = "<group>"; };
+		50F72AE82C46395700D7D5F2 /* UniversityListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListPresenter.swift; sourceTree = "<group>"; };
+		50F72AEA2C46396300D7D5F2 /* UniversityListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListEntity.swift; sourceTree = "<group>"; };
+		50F72AEC2C46396F00D7D5F2 /* UniversityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		503B3A5A2C45174F00F42348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A732C45175000F42348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A7D2C45175000F42348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5002277B2C492CE9006E6CF9 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A942C45178900F42348 /* UniversityDetailModule */,
+				503B3A932C45175A00F42348 /* UniversityListModule */,
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
+		503B3A542C45174F00F42348 = {
+			isa = PBXGroup;
+			children = (
+				503B3A5F2C45174F00F42348 /* VIPERAssignment */,
+				503B3A792C45175000F42348 /* VIPERAssignmentTests */,
+				503B3A832C45175000F42348 /* VIPERAssignmentUITests */,
+				503B3A5E2C45174F00F42348 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		503B3A5E2C45174F00F42348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A5D2C45174F00F42348 /* VIPERAssignment.app */,
+				503B3A762C45175000F42348 /* VIPERAssignmentTests.xctest */,
+				503B3A802C45175000F42348 /* VIPERAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		503B3A5F2C45174F00F42348 /* VIPERAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A9F2C45183A00F42348 /* NetworkModule */,
+				50617D3E2C4708D100C0A36F /* Persistent */,
+				50C5AF552C482AF000FEB94B /* CDModel */,
+				50617D4D2C470DBA00C0A36F /* UniversityRepository */,
+				5002277B2C492CE9006E6CF9 /* AppModule */,
+				503B3A602C45174F00F42348 /* AppDelegate.swift */,
+				503B3A6C2C45175000F42348 /* Assets.xcassets */,
+				503B3A6E2C45175000F42348 /* LaunchScreen.storyboard */,
+				503B3A712C45175000F42348 /* Info.plist */,
+				503B3A692C45174F00F42348 /* VIPERAssignment.xcdatamodeld */,
+			);
+			path = VIPERAssignment;
+			sourceTree = "<group>";
+		};
+		503B3A792C45175000F42348 /* VIPERAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A7A2C45175000F42348 /* VIPERAssignmentTests.swift */,
+			);
+			path = VIPERAssignmentTests;
+			sourceTree = "<group>";
+		};
+		503B3A832C45175000F42348 /* VIPERAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A842C45175000F42348 /* VIPERAssignmentUITests.swift */,
+				503B3A862C45175000F42348 /* VIPERAssignmentUITestsLaunchTests.swift */,
+			);
+			path = VIPERAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		503B3A932C45175A00F42348 /* UniversityListModule */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A992C4517DB00F42348 /* UniversityListRouter */,
+				503B3A982C4517CE00F42348 /* UniversityListEntity */,
+				503B3A972C4517C100F42348 /* Presenter */,
+				503B3A962C4517B700F42348 /* UniversityListInteractor */,
+				503B3A952C4517AB00F42348 /* UniversityListView */,
+			);
+			path = UniversityListModule;
+			sourceTree = "<group>";
+		};
+		503B3A942C45178900F42348 /* UniversityDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				503B3A9E2C45180800F42348 /* UniversityDetailRouter */,
+				503B3A9D2C45180300F42348 /* UniversityDetailEntity */,
+				503B3A9C2C4517FA00F42348 /* UniversityDetailPresenter */,
+				503B3A9B2C4517F400F42348 /* UniversityDetailInteractor */,
+				503B3A9A2C4517EF00F42348 /* UniversityDetailView */,
+			);
+			path = UniversityDetailModule;
+			sourceTree = "<group>";
+		};
+		503B3A952C4517AB00F42348 /* UniversityListView */ = {
+			isa = PBXGroup;
+			children = (
+				50F72AE42C46392A00D7D5F2 /* UniversityListView.swift */,
+			);
+			path = UniversityListView;
+			sourceTree = "<group>";
+		};
+		503B3A962C4517B700F42348 /* UniversityListInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				50F72AE62C46393E00D7D5F2 /* UniversityListInteractor.swift */,
+			);
+			path = UniversityListInteractor;
+			sourceTree = "<group>";
+		};
+		503B3A972C4517C100F42348 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				50F72AE82C46395700D7D5F2 /* UniversityListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		503B3A982C4517CE00F42348 /* UniversityListEntity */ = {
+			isa = PBXGroup;
+			children = (
+				50F72AEA2C46396300D7D5F2 /* UniversityListEntity.swift */,
+			);
+			path = UniversityListEntity;
+			sourceTree = "<group>";
+		};
+		503B3A992C4517DB00F42348 /* UniversityListRouter */ = {
+			isa = PBXGroup;
+			children = (
+				50F72AEC2C46396F00D7D5F2 /* UniversityList.swift */,
+			);
+			path = UniversityListRouter;
+			sourceTree = "<group>";
+		};
+		503B3A9A2C4517EF00F42348 /* UniversityDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				500227712C48DC6E006E6CF9 /* UniversityDetailView.swift */,
+			);
+			path = UniversityDetailView;
+			sourceTree = "<group>";
+		};
+		503B3A9B2C4517F400F42348 /* UniversityDetailInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				500227732C48DC88006E6CF9 /* UniversityDetailInteractor.swift */,
+			);
+			path = UniversityDetailInteractor;
+			sourceTree = "<group>";
+		};
+		503B3A9C2C4517FA00F42348 /* UniversityDetailPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				500227752C48DC90006E6CF9 /* UniversityDetailPresenter.swift */,
+			);
+			path = UniversityDetailPresenter;
+			sourceTree = "<group>";
+		};
+		503B3A9D2C45180300F42348 /* UniversityDetailEntity */ = {
+			isa = PBXGroup;
+			children = (
+				500227772C48DC9D006E6CF9 /* UniversityDetailEntity.swift */,
+			);
+			path = UniversityDetailEntity;
+			sourceTree = "<group>";
+		};
+		503B3A9E2C45180800F42348 /* UniversityDetailRouter */ = {
+			isa = PBXGroup;
+			children = (
+				500227792C48DCA6006E6CF9 /* UniversityDetailRouter.swift */,
+			);
+			path = UniversityDetailRouter;
+			sourceTree = "<group>";
+		};
+		503B3A9F2C45183A00F42348 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				50617D412C470B0E00C0A36F /* NetworkService.swift */,
+				50617D432C470B2000C0A36F /* NetworkServiceImpl.swift */,
+				50617D452C470B3700C0A36F /* Endpoint.swift */,
+				50617D472C470B4800C0A36F /* NetworkError.swift */,
+				50617D492C470B6300C0A36F /* Path.swift */,
+				50617D4B2C470B7C00C0A36F /* EndpointBuilder.swift */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		50617D3E2C4708D100C0A36F /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				50617D3F2C4708F700C0A36F /* PersistentStorage.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		50617D4D2C470DBA00C0A36F /* UniversityRepository */ = {
+			isa = PBXGroup;
+			children = (
+				50617D4E2C470DDF00C0A36F /* UniversityRepository.swift */,
+				50617D502C470F0C00C0A36F /* RemoteUniversityDataSource.swift */,
+				50617D522C470F1F00C0A36F /* LocalUniversityDataSource.swift */,
+				50617D542C470F4300C0A36F /* UniversityRepositoryImpl.swift */,
+			);
+			path = UniversityRepository;
+			sourceTree = "<group>";
+		};
+		50C5AF552C482AF000FEB94B /* CDModel */ = {
+			isa = PBXGroup;
+			children = (
+				50C5AF562C482B4100FEB94B /* CDUniversity+CoreDataClass.swift */,
+				50C5AF572C482B4100FEB94B /* CDUniversity+CoreDataProperties.swift */,
+			);
+			path = CDModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		503B3A5C2C45174F00F42348 /* VIPERAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503B3A8A2C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignment" */;
+			buildPhases = (
+				503B3A592C45174F00F42348 /* Sources */,
+				503B3A5A2C45174F00F42348 /* Frameworks */,
+				503B3A5B2C45174F00F42348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPERAssignment;
+			productName = VIPERAssignment;
+			productReference = 503B3A5D2C45174F00F42348 /* VIPERAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		503B3A752C45175000F42348 /* VIPERAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503B3A8D2C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignmentTests" */;
+			buildPhases = (
+				503B3A722C45175000F42348 /* Sources */,
+				503B3A732C45175000F42348 /* Frameworks */,
+				503B3A742C45175000F42348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503B3A782C45175000F42348 /* PBXTargetDependency */,
+			);
+			name = VIPERAssignmentTests;
+			productName = VIPERAssignmentTests;
+			productReference = 503B3A762C45175000F42348 /* VIPERAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		503B3A7F2C45175000F42348 /* VIPERAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503B3A902C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignmentUITests" */;
+			buildPhases = (
+				503B3A7C2C45175000F42348 /* Sources */,
+				503B3A7D2C45175000F42348 /* Frameworks */,
+				503B3A7E2C45175000F42348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503B3A822C45175000F42348 /* PBXTargetDependency */,
+			);
+			name = VIPERAssignmentUITests;
+			productName = VIPERAssignmentUITests;
+			productReference = 503B3A802C45175000F42348 /* VIPERAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		503B3A552C45174F00F42348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					503B3A5C2C45174F00F42348 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					503B3A752C45175000F42348 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 503B3A5C2C45174F00F42348;
+					};
+					503B3A7F2C45175000F42348 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 503B3A5C2C45174F00F42348;
+					};
+				};
+			};
+			buildConfigurationList = 503B3A582C45174F00F42348 /* Build configuration list for PBXProject "VIPERAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 503B3A542C45174F00F42348;
+			productRefGroup = 503B3A5E2C45174F00F42348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				503B3A5C2C45174F00F42348 /* VIPERAssignment */,
+				503B3A752C45175000F42348 /* VIPERAssignmentTests */,
+				503B3A7F2C45175000F42348 /* VIPERAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503B3A5B2C45174F00F42348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3A702C45175000F42348 /* LaunchScreen.storyboard in Resources */,
+				503B3A6D2C45175000F42348 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A742C45175000F42348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A7E2C45175000F42348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		503B3A592C45174F00F42348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C5AF582C482B4100FEB94B /* CDUniversity+CoreDataClass.swift in Sources */,
+				50C5AF592C482B4100FEB94B /* CDUniversity+CoreDataProperties.swift in Sources */,
+				50617D532C470F1F00C0A36F /* LocalUniversityDataSource.swift in Sources */,
+				50617D442C470B2000C0A36F /* NetworkServiceImpl.swift in Sources */,
+				50617D422C470B0E00C0A36F /* NetworkService.swift in Sources */,
+				5002277A2C48DCA6006E6CF9 /* UniversityDetailRouter.swift in Sources */,
+				50F72AED2C46396F00D7D5F2 /* UniversityList.swift in Sources */,
+				50F72AE52C46392A00D7D5F2 /* UniversityListView.swift in Sources */,
+				50617D552C470F4300C0A36F /* UniversityRepositoryImpl.swift in Sources */,
+				50617D402C4708F700C0A36F /* PersistentStorage.swift in Sources */,
+				50F72AEB2C46396300D7D5F2 /* UniversityListEntity.swift in Sources */,
+				500227742C48DC88006E6CF9 /* UniversityDetailInteractor.swift in Sources */,
+				50617D4F2C470DDF00C0A36F /* UniversityRepository.swift in Sources */,
+				50F72AE72C46393E00D7D5F2 /* UniversityListInteractor.swift in Sources */,
+				50617D4A2C470B6300C0A36F /* Path.swift in Sources */,
+				50617D512C470F0C00C0A36F /* RemoteUniversityDataSource.swift in Sources */,
+				50617D4C2C470B7C00C0A36F /* EndpointBuilder.swift in Sources */,
+				503B3A612C45174F00F42348 /* AppDelegate.swift in Sources */,
+				500227722C48DC6E006E6CF9 /* UniversityDetailView.swift in Sources */,
+				50F72AE92C46395700D7D5F2 /* UniversityListPresenter.swift in Sources */,
+				50617D482C470B4800C0A36F /* NetworkError.swift in Sources */,
+				50617D462C470B3700C0A36F /* Endpoint.swift in Sources */,
+				503B3A6B2C45174F00F42348 /* VIPERAssignment.xcdatamodeld in Sources */,
+				500227762C48DC90006E6CF9 /* UniversityDetailPresenter.swift in Sources */,
+				500227782C48DC9D006E6CF9 /* UniversityDetailEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A722C45175000F42348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3A7B2C45175000F42348 /* VIPERAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B3A7C2C45175000F42348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3A872C45175000F42348 /* VIPERAssignmentUITestsLaunchTests.swift in Sources */,
+				503B3A852C45175000F42348 /* VIPERAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		503B3A782C45175000F42348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 503B3A5C2C45174F00F42348 /* VIPERAssignment */;
+			targetProxy = 503B3A772C45175000F42348 /* PBXContainerItemProxy */;
+		};
+		503B3A822C45175000F42348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 503B3A5C2C45174F00F42348 /* VIPERAssignment */;
+			targetProxy = 503B3A812C45175000F42348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		503B3A6E2C45175000F42348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503B3A6F2C45175000F42348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		503B3A882C45175000F42348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		503B3A892C45175000F42348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		503B3A8B2C45175000F42348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPERAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		503B3A8C2C45175000F42348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPERAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		503B3A8E2C45175000F42348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIPERAssignment";
+			};
+			name = Debug;
+		};
+		503B3A8F2C45175000F42348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIPERAssignment";
+			};
+			name = Release;
+		};
+		503B3A912C45175000F42348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPERAssignment;
+			};
+			name = Debug;
+		};
+		503B3A922C45175000F42348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VIPERAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPERAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		503B3A582C45174F00F42348 /* Build configuration list for PBXProject "VIPERAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3A882C45175000F42348 /* Debug */,
+				503B3A892C45175000F42348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503B3A8A2C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3A8B2C45175000F42348 /* Debug */,
+				503B3A8C2C45175000F42348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503B3A8D2C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3A8E2C45175000F42348 /* Debug */,
+				503B3A8F2C45175000F42348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503B3A902C45175000F42348 /* Build configuration list for PBXNativeTarget "VIPERAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3A912C45175000F42348 /* Debug */,
+				503B3A922C45175000F42348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		503B3A692C45174F00F42348 /* VIPERAssignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				503B3A6A2C45174F00F42348 /* VIPERAssignment.xcdatamodel */,
+			);
+			currentVersion = 503B3A6A2C45174F00F42348 /* VIPERAssignment.xcdatamodel */;
+			path = VIPERAssignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 503B3A552C45174F00F42348 /* Project object */;
+}
