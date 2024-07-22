@@ -7,4 +7,4 @@
 
 ## Preview
 
-![Preview Image](/blob/main/Flow.png)
+![Preview Image](https://github.com/Abdullah-Ansari/VIPER/blob/main/Flow.png)
